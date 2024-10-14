@@ -1,26 +1,26 @@
 .services-area {
-    @media #{$md}{
-        padding-top:100px;
+    @media #{$md} {
+        padding-top: 100px;
         padding-bottom: 50px;
-     }
-    @media #{$sm}{
-        padding-top:70px;
+    }
+    @media #{$sm} {
+        padding-top: 70px;
         padding-bottom: 20px;
-     }
-    @media #{$xs}{
-       padding-top:70px;
-       padding-bottom: 20px;
+    }
+    @media #{$xs} {
+        padding-top: 70px;
+        padding-bottom: 20px;
     }
 
-    .single-cat{
+    .single-cat {
         padding: 61px 22px;
-        @include transition(.4s);
+        @include transition(0.4s);
         position: relative;
         z-index: 1;
         background: #fff;
         &::after {
             position: absolute;
-            content: "";
+            content: '';
             left: 0;
             bottom: 0px;
             background: #c7ddf9;
@@ -30,64 +30,63 @@
         background: #fff;
         &::before {
             position: absolute;
-            content: "";
+            content: '';
             left: 0;
             bottom: 0px;
-            background: #3589f1;
+            background: #603f83ff;
             height: 3px;
             width: 0;
-           @include transition(.4s);
+            @include transition(0.4s);
             z-index: 2;
         }
-        .cat-icon{
-            span{
+        .cat-icon {
+            span {
                 color: $theme-color;
                 font-size: 50px;
                 margin-bottom: 30px;
                 display: block;
             }
         }
-        .cat-cap{
-            h5{
-             & > a{
-                font-size: 20px;
-                font-weight: 500;
-                margin-bottom: 21px;
-                display: block;
-                @include transition(.2s);
-                @media #{$lg}{
-                    font-size: 18px;
+        .cat-cap {
+            h5 {
+                & > a {
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 21px;
+                    display: block;
+                    @include transition(0.2s);
+                    @media #{$lg} {
+                        font-size: 18px;
+                    }
+                    @media #{$sm} {
+                        font-size: 19px;
+                    }
+                    @media #{$sm} {
+                        font-size: 19px;
+                    }
+                    &:hover {
+                        color: $theme-color;
+                    }
                 }
-                @media #{$sm}{
-                    font-size: 19px;
-                }
-                @media #{$sm}{
-                    font-size: 19px;
-                }
-                &:Hover{
-                    color: $theme-color;
-                }
-              }
             }
-            p{
+            p {
                 margin-bottom: 36px;
                 color: #57667e;
                 font-size: 14px;
-                @include transition(.2s);
-                @media #{$sm}{
+                @include transition(0.2s);
+                @media #{$sm} {
                     font-size: 15px;
-
                 }
             }
         }
-        // Hover Effect In single 
-        &:hover{
-                &::before {
-                    width: 100%;
-                }
-       }   
-       &.single-cat2{
-        background: #fcfeff;
-       }
+        // Hover Effect In single
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+        &.single-cat2 {
+            background: #fcfeff;
+        }
     }
 }
