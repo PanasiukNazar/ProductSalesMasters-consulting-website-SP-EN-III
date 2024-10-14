@@ -3164,6 +3164,12 @@ hr {
     z-index: 99;
 }
 
+@media (max-width: 540px) {
+    .mobile_menu {
+        margin-top: 20px;
+    }
+}
+
 /* line 152, ../../../sponDon TI/Running Project/259.Finance_HTML/assets/scss/_headerMenu.scss */
 .mobile_menu .slicknav_menu {
     background: transparent;
